@@ -318,7 +318,7 @@ def getNbiOptions(incoming):
                     thisnbi['id'] = nbimageinfo['Index']
 
                 thisnbi['booter'] = \
-                    find('booter', path)[0]
+                    find(nbimageinfo['BootFile'], path)[0]
                 thisnbi['description'] = \
                     nbimageinfo['Description']
                 thisnbi['disabledsysids'] = \
